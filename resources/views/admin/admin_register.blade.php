@@ -11,7 +11,8 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{asset('panel/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{asset('panel/fonts/iconic/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" type="text/css"
+          href="{{asset('panel/fonts/iconic/css/material-design-iconic-font.min.css')}}">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{asset('panel/vendor/animate/animate.css')}}">
     <!--===============================================================================================-->
@@ -49,12 +50,12 @@
 						Admin Register
 					</span>
 
-                <div class="wrap-input100 validate-input" data-validate = "Enter User Name">
+                <div class="wrap-input100 validate-input" data-validate="Enter User Name">
                     <input class="input100" type="text" name="name" placeholder="Username">
                     <span class="focus-input100" data-placeholder="&#xf207;"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate = "Enter Email">
+                <div class="wrap-input100 validate-input" data-validate="Enter Email">
                     <input class="input100" type="email" name="email" placeholder="Email">
                     <span class="focus-input100" data-placeholder="&#xf207;"></span>
                 </div>
@@ -70,7 +71,7 @@
 
                 <div class="container-login100-form-btn">
                     <button type="submit" class="login100-form-btn">
-                       Register
+                        Register
                     </button>
                 </div>
             </form>

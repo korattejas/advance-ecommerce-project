@@ -59,4 +59,9 @@ class IndexController extends Controller
      return redirect()->route('dashboard')->with($notification);
 
     }
+
+    public function UserChangePassword()
+    {
+     return view('frontend.profile.change_password');
+    }
 }

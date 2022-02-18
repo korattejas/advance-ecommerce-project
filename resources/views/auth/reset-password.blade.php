@@ -19,26 +19,30 @@
                         <h4 class="">Reset Password</h4>
                         <p class="">Hello, Reset Your Password</p>
                         <form class="register-form outer-top-xs" method="POST" action="{{ route('password.update') }}">
-                            @csrf
-                            <!-- Password Reset Token -->
-                                <input type="hidden" name="token" value="{{ $request->route('token') }}">
+                        @csrf
+                        <!-- Password Reset Token -->
+                            <input type="hidden" name="token" value="{{ $request->route('token') }}">
 
-                                <div class="form-group">
+                            <div class="form-group">
                                 <label class="info-title" for="email">Email Address <span>*</span></label>
                                 <input type="email" name="email" class="form-control unicase-form-control text-input"
                                        id="email">
                             </div>
                             <div class="form-group">
                                 <label class="info-title" for="password">Password <span>*</span></label>
-                                <input type="password" name="password" class="form-control unicase-form-control text-input"
+                                <input type="password" name="password"
+                                       class="form-control unicase-form-control text-input"
                                        id="password">
                             </div>
                             <div class="form-group">
                                 <label class="info-title" for="confirm_password">Confirm Password <span>*</span></label>
-                                <input type="password" name="password_confirmation"  class="form-control unicase-form-control text-input"
+                                <input type="password" name="password_confirmation"
+                                       class="form-control unicase-form-control text-input"
                                        id="password_confirmation">
                             </div>
-                            <button type="submit" class="btn-upper btn btn-primary checkout-page-button">Reset Password</button>
+                            <button type="submit" class="btn-upper btn btn-primary checkout-page-button">Reset
+                                Password
+                            </button>
                         </form>
                     </div>
                 </div>

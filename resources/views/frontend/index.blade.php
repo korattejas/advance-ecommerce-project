@@ -1224,7 +1224,8 @@
 
                     <!-- ============================================== Testimonials: END ============================================== -->
 
-                    <div class="home-banner"><img src="{{asset('frontend/assets/images/banners/LHS-banner.jpg')}}" alt="Image"></div>
+                    <div class="home-banner"><img src="{{asset('frontend/assets/images/banners/LHS-banner.jpg')}}"
+                                                  alt="Image"></div>
                 </div>
                 <!-- /.sidemenu-holder -->
                 <!-- ============================================== SIDEBAR : END ============================================== -->
@@ -1235,7 +1236,8 @@
 
                     <div id="hero">
                         <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
-                            <div class="item" style="background-image: url({{asset('frontend/assets/images/sliders/01.jpg')}});">
+                            <div class="item"
+                                 style="background-image: url({{asset('frontend/assets/images/sliders/01.jpg')}});">
                                 <div class="container-fluid">
                                     <div class="caption bg-color vertical-center text-left">
                                         <div class="slider-header fadeInDown-1">Top Brands</div>
@@ -1252,7 +1254,8 @@
                             </div>
                             <!-- /.item -->
 
-                            <div class="item" style="background-image: url({{asset('frontend/assets/images/sliders/02.jpg')}});">
+                            <div class="item"
+                                 style="background-image: url({{asset('frontend/assets/images/sliders/02.jpg')}});">
                                 <div class="container-fluid">
                                     <div class="caption bg-color vertical-center text-left">
                                         <div class="slider-header fadeInDown-1">Spring 2016</div>
@@ -1347,7 +1350,8 @@
                                                 <div class="product">
                                                     <div class="product-image">
                                                         <div class="image"><a href="detail.html"><img
-                                                                    src="{{asset('frontend/assets/images/products/p1.jpg')}}" alt=""></a>
+                                                                    src="{{asset('frontend/assets/images/products/p1.jpg')}}"
+                                                                    alt=""></a>
                                                         </div>
                                                         <!-- /.image -->
 
@@ -1406,7 +1410,8 @@
                                                 <div class="product">
                                                     <div class="product-image">
                                                         <div class="image"><a href="detail.html"><img
-                                                                    src="{{asset('frontend/assets/images/products/p2.jpg')}}" alt=""></a>
+                                                                    src="{{asset('frontend/assets/images/products/p2.jpg')}}"
+                                                                    alt=""></a>
                                                         </div>
                                                         <!-- /.image -->
 
@@ -1462,7 +1467,8 @@
                                                 <div class="product">
                                                     <div class="product-image">
                                                         <div class="image"><a href="detail.html"><img
-                                                                    src="{{asset('frontend/assets/images/products/p4.jpg')}}" alt=""></a>
+                                                                    src="{{asset('frontend/assets/images/products/p4.jpg')}}"
+                                                                    alt=""></a>
                                                         </div>
                                                         <!-- /.image -->
 
@@ -1518,7 +1524,8 @@
                                                 <div class="product">
                                                     <div class="product-image">
                                                         <div class="image"><a href="detail.html"><img
-                                                                    src="{{asset('frontend/assets/images/products/p3.jpg')}}" alt=""></a>
+                                                                    src="{{asset('frontend/assets/images/products/p3.jpg')}}"
+                                                                    alt=""></a>
                                                         </div>
                                                         <!-- /.image -->
 
@@ -1574,7 +1581,8 @@
                                                 <div class="product">
                                                     <div class="product-image">
                                                         <div class="image"><a href="detail.html"><img
-                                                                    src="{{asset('frontend/assets/images/products/p30.jpg')}}" alt=""></a>
+                                                                    src="{{asset('frontend/assets/images/products/p30.jpg')}}"
+                                                                    alt=""></a>
                                                         </div>
                                                         <!-- /.image -->
 
@@ -3392,7 +3400,8 @@
                                     <div class="blog-post">
                                         <div class="blog-post-image">
                                             <div class="image"><a href="blog.html"><img
-                                                        src="{{asset('frontend/assets/images/blog-post/post1.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/blog-post/post1.jpg')}}"
+                                                        alt=""></a></div>
                                         </div>
                                         <!-- /.blog-post-image -->
 
@@ -3414,7 +3423,8 @@
                                     <div class="blog-post">
                                         <div class="blog-post-image">
                                             <div class="image"><a href="blog.html"><img
-                                                        src="{{asset('frontend/assets/images/blog-post/post2.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/blog-post/post2.jpg')}}"
+                                                        alt=""></a></div>
                                         </div>
                                         <!-- /.blog-post-image -->
 
@@ -3438,7 +3448,8 @@
                                     <div class="blog-post">
                                         <div class="blog-post-image">
                                             <div class="image"><a href="blog.html"><img
-                                                        src="{{asset('frontend/assets/images/blog-post/post1.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/blog-post/post1.jpg')}}"
+                                                        alt=""></a></div>
                                         </div>
                                         <!-- /.blog-post-image -->
 
@@ -3460,7 +3471,8 @@
                                     <div class="blog-post">
                                         <div class="blog-post-image">
                                             <div class="image"><a href="blog.html"><img
-                                                        src="{{asset('frontend/assets/images/blog-post/post2.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/blog-post/post2.jpg')}}"
+                                                        alt=""></a></div>
                                         </div>
                                         <!-- /.blog-post-image -->
 
@@ -3482,7 +3494,8 @@
                                     <div class="blog-post">
                                         <div class="blog-post-image">
                                             <div class="image"><a href="blog.html"><img
-                                                        src="{{asset('frontend/assets/images/blog-post/post1.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/blog-post/post1.jpg')}}"
+                                                        alt=""></a></div>
                                         </div>
                                         <!-- /.blog-post-image -->
 
@@ -3517,7 +3530,8 @@
                                     <div class="product">
                                         <div class="product-image">
                                             <div class="image"><a href="detail.html"><img
-                                                        src="{{asset('frontend/assets/images/products/p19.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/products/p19.jpg')}}"
+                                                        alt=""></a></div>
                                             <!-- /.image -->
 
                                             <div class="tag new"><span>new</span></div>
@@ -3570,7 +3584,8 @@
                                     <div class="product">
                                         <div class="product-image">
                                             <div class="image"><a href="detail.html"><img
-                                                        src="{{asset('frontend/assets/images/products/p28.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/products/p28.jpg')}}"
+                                                        alt=""></a></div>
                                             <!-- /.image -->
 
                                             <div class="tag new"><span>new</span></div>
@@ -3676,7 +3691,8 @@
                                     <div class="product">
                                         <div class="product-image">
                                             <div class="image"><a href="detail.html"><img
-                                                        src="{{asset('frontend/assets/images/products/p1.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/products/p1.jpg')}}"
+                                                        alt=""></a></div>
                                             <!-- /.image -->
 
                                             <div class="tag hot"><span>hot</span></div>
@@ -3729,7 +3745,8 @@
                                     <div class="product">
                                         <div class="product-image">
                                             <div class="image"><a href="detail.html"><img
-                                                        src="{{asset('frontend/assets/images/products/p2.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/products/p2.jpg')}}"
+                                                        alt=""></a></div>
                                             <!-- /.image -->
 
                                             <div class="tag sale"><span>sale</span></div>
@@ -3782,7 +3799,8 @@
                                     <div class="product">
                                         <div class="product-image">
                                             <div class="image"><a href="detail.html"><img
-                                                        src="{{asset('frontend/assets/images/products/p3.jpg')}}" alt=""></a></div>
+                                                        src="{{asset('frontend/assets/images/products/p3.jpg')}}"
+                                                        alt=""></a></div>
                                             <!-- /.image -->
 
                                             <div class="tag sale"><span>sale</span></div>
@@ -3842,8 +3860,8 @@
             <!-- /.row -->
             <!-- ============================================== BRANDS CAROUSEL ============================================== -->
 
-            @include('frontend.body.brands')
-            <!-- /.logo-slider -->
+        @include('frontend.body.brands')
+        <!-- /.logo-slider -->
             <!-- ============================================== BRANDS CAROUSEL : END ============================================== -->
         </div>
         <!-- /.container -->

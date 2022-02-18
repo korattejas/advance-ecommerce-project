@@ -25,7 +25,9 @@
                                 <input type="email" name="email" class="form-control unicase-form-control text-input"
                                        id="email">
                             </div>
-                            <button type="submit" class="btn-upper btn btn-primary checkout-page-button">Email Password Reset Link</button>
+                            <button type="submit" class="btn-upper btn btn-primary checkout-page-button">Email Password
+                                Reset Link
+                            </button>
                         </form>
                     </div>
                 </div>
