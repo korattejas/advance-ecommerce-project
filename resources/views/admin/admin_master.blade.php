@@ -61,6 +61,11 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="sweetalert2.all.min.js"></script>
+<!-- Ck Editor -->
+<script src="{{asset('../assets/vendor_components/ckeditor/ckeditor.js')}}"></script>
+<script src="{{asset('../assets/vendor_plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js')}}"></script>
+<script src="{{asset('backend/js/pages/editor.js')}}"></script>
+
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     $(function () {

@@ -46,10 +46,7 @@
                                                                 <select name="sub_category_id" id="select"
                                                                         class="form-control" aria-invalid="false">
                                                                     <option value="">Select Your SubCategory</option>
-                                                                    @foreach($categories as $category)
-                                                                        <option
-                                                                            value="{{$category->id}}">{{$category->category_name_en}}</option>
-                                                                    @endforeach
+
                                                                 </select>
                                                                 @error('sub_category_id')
                                                                 <spa class="text-danger">{{$message}}</spa>
@@ -112,14 +109,17 @@
                 var category_id = $(this).val()
                 if (category_id) {
                     $.ajax({
-                        url: "{{ url('/category/subcategory/ajax') }}/" + category_id,
+                        url: "{{ url('admin/category/subcategory/ajax') }}/" + category_id,
                         type: 'GET',
                         datatype: 'json',
                         success: function (data) {
                             var d = $('select[name="sub_category_id"]').empty()
-                            $.each(data, function (key, value) {
+
+                            $.each(JSON.parse(data), function (key, value) {
+
                                 $('select[name="sub_category_id"]').append('<option value="' + value.id + '">' + value.subcategory_name_en + '</option>')
                             })
+
                         },
                     })
                 } else {
