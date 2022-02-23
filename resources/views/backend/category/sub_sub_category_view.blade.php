@@ -30,7 +30,7 @@
                                     @foreach($sub_sub_category as $item)
                                         <tr>
                                             <td>{{$item['category']['category_name_en']}}</td>
-                                            <td>{{$item['subcategory']['sub_category_name_en']}}</td>
+                                            <td>{{$item['subcategory']['subcategory_name_en']}}</td>
                                             <td>{{$item->sub_sub_category_name_en}}</td>
                                             <td>{{$item->sub_sub_category_name_hin}}</td>
                                             <td>

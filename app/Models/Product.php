@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+                'pro_slug_en',
+                'pro_slug_hin',
+
+            ];
+
 }

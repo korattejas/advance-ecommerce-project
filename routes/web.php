@@ -80,11 +80,15 @@ Route::prefix('admin')->group(function () {
 
     Route::prefix('product')->group(function () {
         Route::get('/view', [ProductController::class, 'ProductView'])->name('all.product');
+        Route::get('sub-subcategory/ajax/{sub_category_id}', [ProductController::class, 'GetSubSubCategory']);
         Route::get('/add', [ProductController::class, 'ProductAdd'])->name('add.product');
-        Route::post('/store', [BrandController::class, 'BrandStore'])->name('brand.store');
-        Route::get('/edit/{id}', [BrandController::class, 'BrandEdit'])->name('brand.edit');
-        Route::post('/update', [BrandController::class, 'BrandUpdate'])->name('brand.update');
-        Route::get('/delete/{id}', [BrandController::class, 'BrandDelete'])->name('brand.delete');
+        Route::post('/store', [ProductController::class, 'ProductStore'])->name('product.store');
+        Route::get('/edit/{id}', [ProductController::class, 'productEdit'])->name('product.edit');
+        Route::post('/update', [ProductController::class, 'productUpdate'])->name('product.update');
+        Route::post('/image/update', [ProductController::class, 'productImageUpdate'])->name('update-product-image');
+        Route::post('/main/image/update', [ProductController::class, 'productMainImageUpdate'])->name('update-product-main-image');
+        Route::get('/multi/image/delete/{id}', [ProductController::class, 'multiImgDelete'])->name('product-multi-image-delete');
+        Route::get('/delete/{id}', [ProductController::class, 'productDelete'])->name('product.delete');
     });
 
 

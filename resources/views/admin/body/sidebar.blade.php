@@ -66,7 +66,6 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="{{route('all.product')}}"><i class="ti-more"></i>All Products</a></li>
-                    <li><a href="invoice.html"><i class="ti-more"></i>Manage Products</a></li>
                 </ul>
             </li>
 

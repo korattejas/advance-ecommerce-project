@@ -2,11 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6622a62-abd7-4fb7-beda-700fe724936e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/upload/multi_images/1725538353817590.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/multi_images/1725542954256665.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/multi_images/1725543470599014.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/multi_images/1725543745673600.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/multi_images/1725543987163587.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/multi_images/1725545420007076.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/multi_images/1725557264888948.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/multi_images/1725557332969841.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/multi_images/1725561581366294.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725538218231606.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725538271484089.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725538353607019.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725542954082135.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725543470401047.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725543745477653.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725543987017943.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725545384310901.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725545419844480.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725546192150045.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725546230581968.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725554224739243.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725560211274643.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725560222979412.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_image/1725561581197690.jfif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/js/pages/editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/js/pages/editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MultiImg.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MultiImg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/body/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/body/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category/sub_sub_category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category/sub_sub_category_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/category/sub_sub_category_view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category/sub_sub_category_view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/product/product_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/product/product_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/product/product_view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/product/product_view.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,11 +180,15 @@
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="25He5OAAeUVxsU3fvCsgCAGVO2Q" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -189,7 +221,9 @@
       <workItem from="1645512238356" duration="261000" />
       <workItem from="1645519529536" duration="15000" />
       <workItem from="1645520580680" duration="1134000" />
-      <workItem from="1645530542350" duration="8728000" />
+      <workItem from="1645530542350" duration="8848000" />
+      <workItem from="1645589202936" duration="7149000" />
+      <workItem from="1645598381285" duration="22621000" />
     </task>
     <servers />
   </component>
@@ -206,6 +240,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

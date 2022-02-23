@@ -9,7 +9,7 @@
                 <div class="col-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Category List</h3>
+                            <h3 class="box-title">Product List</h3>
                             <a href="{{route('add.product')}}" style="float: right"
                                class="btn btn-rounded btn-success mb-5">Add Product</a>
                         </div>
@@ -19,22 +19,24 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
-                                        <th>Icon</th>
-                                        <th>Category Name En</th>
-                                        <th>Category Name Hin</th>
+                                        <th>Image</th>
+                                        <th>Product Name En</th>
+                                        <th>Product Name Hin</th>
+                                        <th>Product Quantity</th>
                                         <th>Action</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach($product as $item)
                                         <tr>
-                                            <td><span><i class="{{$item->category_icon}}"></i></span></td>
-                                            <td>{{$item->category_name_en}}</td>
-                                            <td>{{$item->category_name_hin}}</td>
+                                            <td><img src="{{asset($item->image)}}" style="height: 50px;width: 50px;"></td>
+                                            <td>{{$item->pro_name_en}}</td>
+                                            <td>{{$item->pro_name_hin}}</td>
+                                            <td>{{$item->pro_qty}}</td>
                                             <td>
-                                                <a href="{{route('category.edit',$item->id)}}"
+                                                <a href="{{route('product.edit',$item->id)}}"
                                                    class="btn btn-success mb-5"><i class="fa fa-pencil"></i></a>
-                                                <a href="{{route('category.delete',$item->id)}}"
+                                                <a href="{{route('product.delete',$item->id)}}"
                                                    class="btn btn-danger mb-5" id="delete"><i
                                                         class="fa fa-trash"></i></a>
                                             </td>
@@ -43,9 +45,10 @@
                                     </tbody>
                                     <tfoot>
                                     <tr>
-                                        <th>Icon</th>
-                                        <th>Category Name En</th>
-                                        <th>Category Name Hin</th>
+                                        <th>Image</th>
+                                        <th>Product Name En</th>
+                                        <th>Product Name Hin</th>
+                                        <th>Product Quantity</th>
                                         <th>Action</th>
                                     </tr>
                                     </tfoot>
