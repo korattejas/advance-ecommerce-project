@@ -4,12 +4,19 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Http\Controllers\AdminController;
+
+//Backend Controller
 use App\Http\Controllers\Backend\AdminProfileController;
 use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\Backend\ProductController;
+use App\Http\Controllers\Backend\SliderController;
+
+//Frontend Controller
 use App\Http\Controllers\Frontend\IndexController;
+use App\Http\Controllers\Frontend\LanguageController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -89,6 +96,20 @@ Route::prefix('admin')->group(function () {
         Route::post('/main/image/update', [ProductController::class, 'productMainImageUpdate'])->name('update-product-main-image');
         Route::get('/multi/image/delete/{id}', [ProductController::class, 'multiImgDelete'])->name('product-multi-image-delete');
         Route::get('/delete/{id}', [ProductController::class, 'productDelete'])->name('product.delete');
+        Route::get('/inActive/{id}', [ProductController::class, 'productInActive'])->name('product.inActive');
+        Route::get('/active/{id}', [ProductController::class, 'productActive'])->name('product.active');
+    });
+
+    Route::prefix('slider')->group(function () {
+        Route::get('/view', [SliderController::class, 'sliderView'])->name('all.slider');
+        Route::get('/add', [SliderController::class, 'SliderAdd'])->name('add.slider');
+        Route::post('/store', [SliderController::class, 'sliderStore'])->name('slider.store');
+        Route::get('/edit/{id}', [SliderController::class, 'SliderEdit'])->name('slider.edit');
+        Route::post('/update', [SliderController::class, 'SliderUpdate'])->name('slider.update');
+        Route::get('/delete/{id}', [SliderController::class, 'SliderDelete'])->name('slider.delete');
+        Route::get('/inActive/{id}', [SliderController::class, 'SliderInActive'])->name('slider.inActive');
+        Route::get('/active/{id}', [SliderController::class, 'SliderActive'])->name('slider.active');
+
     });
 
 
@@ -105,6 +126,8 @@ Route::get('user/logout', [IndexController::class, 'UserLogout'])->name('user.lo
 Route::get('user/profile', [IndexController::class, 'UserProfile'])->name('user.profile');
 Route::post('user/profile/store', [IndexController::class, 'UserProfileStore'])->name('user.profile.store');
 Route::get('user/change/password', [IndexController::class, 'UserChangePassword'])->name('user.change.password');
+//Product Details
+Route::get('/product/details/{id}/{slug}', [IndexController::class, 'ProductDetails']);
 
 Route::get('/dashboard', function () {
     $id = Auth::User()->id;
@@ -115,5 +138,12 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__ . '/auth.php';
-/*---------------End Web Route----------------*/
+
+//Multiple Language
+Route::get('/language/hindi', [LanguageController::class, 'Hindi'])->name('hindi.lan');
+Route::get('/language/english', [LanguageController::class, 'English'])->name('english.lan');
+
+
+
+/*---------------End Web Route--------- -------*/
 

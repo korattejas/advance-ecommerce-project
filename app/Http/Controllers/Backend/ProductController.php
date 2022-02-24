@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\SubCategory;
 use App\Models\SubSubCategory;
@@ -140,6 +141,7 @@ class ProductController extends Controller
         $sub_sub_category = SubSubCategory::latest()->get();
         $brands = Brand::latest()->get();
         $product = Product::findOrFail($id);
+        $products = DB::table('products')->latest()->get();
         {
             return view('backend.product.product_edit', [
                 'multiImgs' => $multiImgs,
@@ -147,7 +149,8 @@ class ProductController extends Controller
                 'sub_category' => $sub_category,
                 'sub_sub_category' => $sub_sub_category,
                 'brands' => $brands,
-                'product' => $product
+                'product' => $product,
+                'products' => $products
             ]);
         }
     }
@@ -268,16 +271,49 @@ class ProductController extends Controller
     }
 
 
-
     public function productDelete($id)
     {
-        Product::find($id)->delete();
+        $product = Product::findOrFail($id);
+        unlink($product->image);
+        Product::findOrFail($id)->delete();
 
+        $images = MultiImg::where('product_id', $id)->get();
+        foreach ($images as $image) {
+            unlink($image->multi_img);
+            MultiImg::where('product_id', $id)->delete();
+
+        }
         $notification = array([
             'message' => 'Product Deleted Successfully',
             'alert-type' => 'success'
         ]);
 
-        return redirect()->route('all.product')->with($notification);
+        return redirect()->back()->with($notification);
+    }
+
+    //status
+
+    public function productInActive($id)
+    {
+        Product::findOrFail($id)->update(['status' => 0]);
+        $notification = array([
+            'message' => 'Product Status Active Successfully',
+            'alert-type' => 'success'
+        ]);
+
+        return redirect()->back()->with($notification);
+
+    }
+
+    public function productActive($id)
+    {
+        Product::findOrFail($id)->update(['status' => 1]);
+
+        $notification = array([
+            'message' => 'Product Status InActive Successfully',
+            'alert-type' => 'success'
+        ]);
+        return redirect()->back()->with($notification);
+
     }
 }

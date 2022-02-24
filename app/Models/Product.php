@@ -12,7 +12,11 @@ class Product extends Model
     protected $fillable = [
                 'pro_slug_en',
                 'pro_slug_hin',
-
             ];
+
+    public function image()
+    {
+       return $this->belongsTo(MultiImg::class, 'product_id', 'id');
+    }
 
 }

@@ -540,11 +540,11 @@
                                 <input type="hidden" name="id" value="{{$product->id}}">
                                 <input type="hidden" name="old_img" value="{{$product->image}}">
                                 <div class="row row-sm">
-                                    @foreach($product as $image)
+                                    @foreach($products as $image)
                                         <div class="col-md-3">
 
                                             <div class="card">
-                                                <img src="" class="card-img-top"
+                                                <img src="{{asset($image->image)}}" class="card-img-top"
                                                      style="height: 130px; width: 280px;">
                                                 <div class="card-body">
                                                     <p class="card-text">
