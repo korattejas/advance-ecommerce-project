@@ -14,9 +14,14 @@ class Product extends Model
                 'pro_slug_hin',
             ];
 
-    public function image()
+    public function category()
     {
-       return $this->belongsTo(MultiImg::class, 'product_id', 'id');
+       return $this->belongsTo(Category::class, 'category_id', 'id');
     }
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class, 'brand_id', 'id');
+    }
+
 
 }

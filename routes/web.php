@@ -16,6 +16,7 @@ use App\Http\Controllers\Backend\SliderController;
 //Frontend Controller
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\LanguageController;
+use App\Http\Controllers\Frontend\CartController;
 
 
 /*
@@ -128,6 +129,14 @@ Route::post('user/profile/store', [IndexController::class, 'UserProfileStore'])-
 Route::get('user/change/password', [IndexController::class, 'UserChangePassword'])->name('user.change.password');
 //Product Details
 Route::get('/product/details/{id}/{slug}', [IndexController::class, 'ProductDetails']);
+//Product View Modal Wit Ajax
+Route::get('/product/view/modal/{id}', [IndexController::class, 'ProductViewAjax']);
+//Add To Cart
+Route::post('/cart/data/store/{id}', [CartController::class, 'addToCart']);
+
+
+
+
 
 Route::get('/dashboard', function () {
     $id = Auth::User()->id;
